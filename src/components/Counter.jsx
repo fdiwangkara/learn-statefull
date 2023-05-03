@@ -60,9 +60,9 @@ class Counter extends React.Component {
     render() {
         return (
             <div>
-                <IncreaseButton  />
+                <IncreaseButton  increase={this.onIncreaseEventHandler}/>
                 <CounterDisplay count={this.state.count} />
-                <ResetButton  />
+                <ResetButton  reset={this.onResetEventHandler}/>
             </div>
         );
     }
